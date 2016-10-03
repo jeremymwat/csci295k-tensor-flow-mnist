@@ -62,7 +62,7 @@ sess.run(init)
 
 
 
-for i in range(200):
+for i in range(2000):
   batch_xs, batch_ys = mnist.train.next_batch(batch_size)
   sess.run(train_step, feed_dict={input_imgs: batch_xs, labels: batch_ys, dropout_placeholder: 0.5})
 
